@@ -2,7 +2,8 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var textfile = fs.readFileSync("index.html");
+var textfile = new Buffer(256);
+textfile = fs.readFileSync("index.html");
 
 var string_file = textfile.toString();
 
