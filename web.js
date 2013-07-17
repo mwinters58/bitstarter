@@ -5,7 +5,7 @@ var app = express.createServer(express.logger());
 var textfile = new Buffer(256);
 textfile = fs.readFileSync("index.html");
 
-//Var string_file = textfile.toString();
+var string_file = textfile.toString();
 
 app.get('/', function(request, response) {
   response.send('hello world!');
