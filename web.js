@@ -8,7 +8,7 @@ textfile = fs.readFileSync("index.html");
 //var string_file = textfile.toString();
 
 app.get('/', function(request, response) {
-  response.send('hello world');
+  response.send('hello world!');
 });
 
 var port = process.env.PORT || 5000;
